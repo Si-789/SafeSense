@@ -1,17 +1,17 @@
 # SafeSense
 
 ## Overview
-SafeSense is an Arduino-based multi-hazard detection system developed during the UCL Robotics & AI Crash Course, where the project was awarded first place.
+SafeSense is an Arduino-based safety system developed during the UCL Robotics & AI Crash Course, where the project was awarded first place.
 
-The system monitors environmental conditions in real time using vibration and temperature sensors to detect earthquake activity and fire risks. It displays clear emergency instructions through an LCD interface to help users respond quickly and safely during emergencies.
+The system uses vibration and temperature sensors to detect possible earthquake activity and fire risks in real time. Depending on the hazard detected, the LCD display shows different emergency instructions to help users respond quickly and safely.
 
 ## Features
 - Real-time hazard monitoring
-- Earthquake detection using vibration sensors
-- Fire risk detection using temperature sensors
-- Dual-condition emergency alerts
-- LCD safety instruction display
-- Modular and expandable system design
+- Earthquake detection using a vibration sensor
+- Fire risk detection using a temperature sensor
+- LCD safety alerts
+- Detection of combined hazard conditions
+- Expandable system design
 
 ## Technologies Used
 - Arduino Uno
@@ -19,19 +19,16 @@ The system monitors environmental conditions in real time using vibration and te
 - LCD display
 - Temperature sensor
 - Vibration sensor
-- Embedded systems logic
 
 ## How It Works
-The system continuously reads data from:
-- a vibration sensor for earthquake activity
-- a temperature sensor for fire risks
+The system continuously reads data from the vibration and temperature sensors.
 
-The Arduino processes the sensor data in real time and determines:
-- earthquake risk
-- fire risk
-- combined critical hazard conditions
+The Arduino processes this data and determines whether:
+- earthquake activity is detected
+- fire risk is detected
+- both hazards are detected together
 
-The LCD display updates based on the detected hazard condition, providing users with immediate safety instructions.
+The LCD display then updates with different safety messages depending on the situation.
 
 Examples:
 - Earthquake → "Drop & Cover"
@@ -39,19 +36,19 @@ Examples:
 - Combined Hazard → "Critical Alert"
 
 ## Challenges
-One challenge was balancing temperature sensor sensitivity while reducing false alarms as the threshold of the temperature which was initially too high. We also worked on integrating multiple sensor conditions into a single real-time response system.
+One challenge was making sure the temperature sensor was sensitive enough to detect hazards without causing too many false alarms. We also worked on combining multiple sensor conditions into one real-time response system.
 
 ## What I Learned
 Through this project I developed experience in:
-- embedded systems
 - sensor integration
 - Arduino programming
-- real-time monitoring systems
+- embedded systems
 - debugging and testing
-- collaborative engineering
-  
+- real-time monitoring systems
+- teamwork and collaborative problem solving
+
 ## Project Images
-The full project images are included in the images folder.
+Project images are included in the images folder.
 
 ## Presentation
-The full project presentation is included in the presentation folder.
+The full presentation is included in the presentation folder.
