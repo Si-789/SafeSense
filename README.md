@@ -52,3 +52,7 @@ Project images are included in the images folder.
 
 ## Presentation
 The full presentation is included in the presentation folder.
+
+## Wokwi Simulation
+The full simulation can be viewed using the link.
+https://wokwi.com/projects/466106888165981185
